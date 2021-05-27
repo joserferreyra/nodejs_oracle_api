@@ -1,0 +1,24 @@
+{
+  "name": "nodejs_oracle_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joserferreyra/nodejs_oracle_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joserferreyra/nodejs_oracle_api/issues"
+  },
+  "homepage": "https://github.com/joserferreyra/nodejs_oracle_api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "oracledb": "^5.1.0"
+  }
+}
