@@ -53,3 +53,24 @@ function simpleExecute(statement, binds = [], opts = {}) {
 }
 
 module.exports.simpleExecute = simpleExecute;
+
+async function execStoreProcedure(sp, binds) {
+
+    const sql = `BEGIN sp END;`;
+
+    console.log(query);
+    console.log(binds);
+
+    json = {};
+
+    return json;
+
+    try {
+        const result = await simpleExecute(sql, binds);
+        
+    } catch (err) {
+        console.error(err);
+    } 
+}
+
+module.exports.execsp = execStoreProcedure;

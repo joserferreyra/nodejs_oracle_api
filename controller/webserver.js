@@ -9,6 +9,8 @@ function initialize() {
         const app = express();
         httpServer = http.createServer(app);
 
+        app.use('/api', router);
+
         app.get('/', (req, res) => {
             res.end('Servidor activo');
         });
