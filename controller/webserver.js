@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require('express');
 const webServerConfig = require('../config/web-server.js');
+const router = require('./router.js');
 
 let httpServer;
 
@@ -8,6 +9,11 @@ function initialize() {
     return new Promise((resolve, reject) => {
         const app = express();
         httpServer = http.createServer(app);
+
+        /*app.post('/', (req, res) => {
+            res.json(req.body);
+        });
+        */
 
         app.use('/api', router);
 
