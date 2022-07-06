@@ -1,5 +1,5 @@
 module.exports =  {
-    user: 'US_SUELDO',
-    password: 'usuario',
-    connectString: 'www.sueldos.duckdns.org:1521/DESA'
+    user: 'WORKFLOW',
+    password: 'workflow',
+    connectString: '10.6.46.15:1521/HPROD04'
 }

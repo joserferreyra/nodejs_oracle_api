@@ -1,7 +1,11 @@
 const oracledb = require('oracledb');
 const dbconfig = require('./../config/dbconfig');
 
-// hr schema password
+if (process.platform === 'win32') { // Windows
+    oracledb.initOracleClient({ libDir: 'C:\\oracle\\instantclient_21_6' });
+  } else if (process.platform === 'darwin') { // macOS
+    oracledb.initOracleClient({ libDir: process.env.HOME + '/Downloads/instantclient_19_8' });
+  }
 
 // checkConnection asycn function
 
